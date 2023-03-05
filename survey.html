@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <title>Procrastination - Survey</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+<body>
+<section class="sub-header">
+    <nav>
+        <a href="index.html"><img src="images/logo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="proposal.html">PROPOSAL</a></li>
+                <li><a href="infographic.html">INFOGRAPHIC</a></li>
+                <li><a href="survey.html">SURVEY</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="more.html">MORE</a></li>
+            </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>Our Survey</h1>
+</section>
+
+<!----survey---->
+
+<section class="survey">
+
+    <div class="form">
+        <center><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdbJh13YVVxTA5D_2hDaE2LQrsuhtVrxPgIdxPrWTP3jYRALg/viewform?embedded=true" width="640" height="500" frameborder="" marginheight="" marginwidth=""><center>Loading…</center></iframe></center>
+    </div>
+
+</section>
+
+<!--footer-->
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>We are a group of students studying Computing Units 1/2 wanting to find out more about procrastination, more specifically its effects<br>
+    and consequences. We were interested in this topic as it is a very common issue amongst students our age.</p>
+    <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+    </div>
+    <p><i class="fa-regular fa-heart"></i> Meticulously coded by JMSS students</p>
+</section>
+
+<!----JavaScript for Phone Menu---->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+
+</body>
+</html>
+
+
+
+
+

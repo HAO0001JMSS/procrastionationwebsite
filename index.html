@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <title>Procrastination</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+<body>
+<section class="header">
+    <nav>
+        <a href="index.html"><img src="images/logo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="proposal.html">PROPOSAL</a></li>
+                <li><a href="infographic.html">INFOGRAPHIC</a></li>
+                <li><a href="survey.html">SURVEY</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="more.html">MORE</a></li>
+            </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+<div class="text-box">
+    <h1>Procrastination at JMSS</h1>
+    <p>Procrastination is the act of delaying an important task… I'm going to finish writing this later…<br><br>
+        No! That's procrastination! Putting off something important and choosing to do something more<br>
+        enjoyable instead! In this case, not writing this introduction will cause me to miss the deadline<br>
+        for this assignment!<br><br>
+
+        Procrastination is a widespread problem, especially in high school, where students will leave any task, even<br>
+        important ones assignments and study to the last minute, which can have a serious impact on grades and academic<br>
+        performance, as found in data collected through surveying students ranging from year 10 to year 12 at JMSS.<br><br>
+
+        As such, we designed this website to inform you on exactly how procrastination affects students, how students<br>
+        begin and end their procrastination episodes, and how best to avoid procrastination in the future.    
+    </p>
+    <a href="proposal.html" class="main-btn">Learn More</a>
+</div>
+</section>
+
+<!----Why Procrastination?---->
+
+<section class="reason">
+    <h1>Why Procrastination?</h1>
+    <p>Procrastination is a prominent issue for the student population at JMSS</p>
+
+    <div class="row">
+        <div class="reason-col">
+            <h3>Why this Topic?</h3>
+            <p>This topic was chosen so students can better understand how prevalent the issue of procrastination is,
+            and to propose potential solutions for readers having the problem, while also informing 
+            readers on the scientific findings regarding procrastination.</p>
+        </div>
+        <div class="reason-col">
+            <h3>Purpose</h3>
+            <p>This website has been created so students can better understand how to reduce procrastination in their lives. 
+            Data about procrastination which were collected from students in the school will also show readers that 
+            procrastination is an issue that many students experience, and that they aren't alone.</p>
+        </div>
+        <div class="reason-col">
+            <h3>Audience</h3>
+            <p>The intended audience are students between the ages of 15 to 18 studying in Victoria. We selected this 
+            age group as these students will begin or are currently enrolled into VCE classes, which can be very stressful, 
+            likely causing them to have a higher chance of feeling the effects of procrastination firsthand.</p>
+        </div>
+    </div>
+</section>
+
+<!--Problems-->
+
+<section class="problems">
+    <h1>Problems with Procrastination</h1>
+    <p>Procrastination can have detrimental impacts on those who engage in it frequently</p>
+
+    <div class="row">
+        <div class="problems-col">
+            <img src="images/grades.png">
+            <div class="layer">
+                <h3>Worsens Grades</h3>
+            </div>
+        </div>
+        <div class="problems-col">
+            <img src="images/depressed.png">
+            <div class="layer">
+                <h3>Worsens Mental Health</h3>
+            </div>
+        </div>
+        <div class="problems-col">
+            <img src="images/leftout.jpg">
+            <div class="layer">
+                <h3>Less Time for Hangouts</h3>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!--student comments-->
+
+<section class="student-comments">
+    <h1>Student Comments</h1>
+    <p>Student comments regarding procrastination and impacts on their school results</p>
+
+    <div class="row">
+        <div class="comment-col">
+            <img src="images/icon1.png">
+            <div>
+                <p>"I've noticed especially during exam time last year I didn't get as much as I would've liked for some of the more boring subjects mostly due to procrastinating"</p>
+                <h3>Anonymous</h3>
+            </div>
+        </div>
+        <div class="comment-col">
+            <img src="images/icon1.png">
+            <div>
+                <p>"Procrastination decreases my actual study efficiency and I do not have a lot of spare time to waste."</p>
+                <h3>Anonymous</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--further queries-->
+
+<section class="fq">
+    <h1>Feel free to contact us if you have any other<br>questions regarding procrastination</h1>
+    <a href="contact.html" class="main-btn">CONTACT US</a>
+</section>
+
+<!--footer-->
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>We are a group of students studying Computing Units 1/2 wanting to find out more about procrastination, more specifically its effects<br>
+    and consequences. We were interested in this topic as it is a very common issue amongst students our age.</p>
+    <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+    </div>
+    <p><i class="fa-regular fa-heart"></i> Meticulously coded by JMSS students</p>
+</section>
+
+<!----JavaScript for Phone Menu---->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+
+</body>
+</html>
+
+
+
+
+
